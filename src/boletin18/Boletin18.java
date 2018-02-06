@@ -18,7 +18,6 @@ public class Boletin18 {
 //        System.out.println(buzon1.numeroDeCorreos());
         System.out.println(buzon1.porLer());   
         System.out.println(buzon1.amosaPrimerNoLeido());
-        System.out.println(buzon1.amosa(1));
     }
     
 }

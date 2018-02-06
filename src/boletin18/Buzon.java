@@ -35,10 +35,5 @@ public class Buzon {
         return primerNoLido;
     }
     
-    public String amosa(int k){
-        String mensaxe = correo.get(k).getContidoCorreo();
-        return mensaxe;
-    }
-    
 
 }
