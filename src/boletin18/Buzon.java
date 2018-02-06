@@ -2,6 +2,7 @@
 package boletin18;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 public class Buzon {
     ArrayList<Correos>correo=new ArrayList();
@@ -35,5 +36,28 @@ public class Buzon {
         return primerNoLido;
     }
     
+    public String amosa(){
+        int resposta;
+        do{
+            resposta = Integer.parseInt(JOptionPane.showInputDialog("Introduce un correo a mostrar"));     
+        }
+        while(resposta>correo.size());
+         
+        return correo.get(resposta-1).getContidoCorreo();
+    }
+    
+    public void elimina(){
+        int resposta;
+        do{
+            resposta = Integer.parseInt(JOptionPane.showInputDialog("Introduce un correo a eliminar"));
+            correo.remove(resposta-1);
+        }while(resposta<0);
+        
+        for(int i=0;i<correo.size();i++){
+            System.out.println(correo.get(i).getContidoCorreo());
+        }
+        
+        
+    }
 
 }
